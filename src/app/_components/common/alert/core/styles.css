@@ -1,0 +1,61 @@
+.toast-enter {
+  animation: enterAnimation 0.35s cubic-bezier(0.21, 1.02, 0.73, 1) forwards;
+}
+
+.toast-leave {
+  animation: leaveAnimation 0.4s cubic-bezier(0.06, 0.71, 0.55, 1) forwards;
+}
+
+.toast-success {
+  background: #00aa6e !important;
+  color: #000000 !important;
+}
+
+.toast-error {
+  background: #ff5861 !important;
+  color: #000000 !important;
+}
+
+
+.loading-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 100%;
+  border-color: #e0e0e0;
+  border-right-color: #111827;
+  animation: rotateAnimation 1s linear infinite;
+}
+
+@keyframes enterAnimation {
+  0% {
+    transform: translate3d(0, 200%, 0) scale(0.6);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes leaveAnimation {
+  0% {
+    transform: translate3d(0, 0, -1px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 150%, -1px) scale(0.6);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

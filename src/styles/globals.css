@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center-toaster {
+  background: red;
+}
+
+.center-toaster>select {
+  width: 100%;
+}
+
+select {
+  background: red;
+}
