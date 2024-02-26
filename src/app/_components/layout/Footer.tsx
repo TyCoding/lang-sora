@@ -1,8 +1,4 @@
-import {
-  MdiGithub,
-  RiProductHuntFill,
-  SimpleIconsBuymeacoffee,
-} from "@/app/_components/common/Icon";
+import { MdiGithub } from "@/app/_components/common/Icon";
 import { AppSetting, FooterSetting } from "@/const/setting";
 
 export const Footer = () => {
@@ -27,9 +23,9 @@ export const Footer = () => {
               All right reserved
             </div>
             <div className="mt-2 flex gap-2 text-white">
-              <MdiGithub className="cursor-pointer text-2xl" />
-              <RiProductHuntFill className="cursor-pointer text-2xl" />
-              <SimpleIconsBuymeacoffee className="cursor-pointer text-xl" />
+              <a href={AppSetting.github} target="_blank">
+                <MdiGithub className="cursor-pointer text-2xl" />
+              </a>
             </div>
           </div>
         </aside>

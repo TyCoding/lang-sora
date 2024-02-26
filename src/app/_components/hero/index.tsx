@@ -1,4 +1,26 @@
+"use client";
+
+import { api } from "@/trpc/react";
+import { toast } from "@/app/_components/common/alert";
+import { useState } from "react";
+
 export function Hero() {
+  const queryApi = api.video.getVideoIdList.useQuery();
+  const [prompt, setPrompt] = useState("");
+
+  async function onCreate() {
+    if (prompt.trim() == "") {
+      toast.error("Prompt is empty");
+      return;
+    }
+
+    const list = queryApi.data;
+    if (!list) {
+      return;
+    }
+    const random = Math.floor(Math.random() * list.length);
+    window.location.href = "/video/" + list[random]?.id;
+  }
   return (
     <div className="hero relative overflow-hidden px-6 py-6 shadow-2xl sm:rounded-3xl sm:px-24 xl:pt-32">
       <div className="hero-content z-10 flex-col text-center">
@@ -12,6 +34,8 @@ export function Hero() {
           <div className="flex items-center justify-center gap-4">
             <label className="input input-bordered flex w-7/12 items-center gap-2">
               <input
+                value={prompt}
+                onChange={(e) => setPrompt(e.target.value)}
                 type="text"
                 className="grow"
                 placeholder="Describe your ideas"
@@ -29,7 +53,9 @@ export function Hero() {
                 />
               </svg>
             </label>
-            <button className="btn btn-primary">Get Started</button>
+            <button onClick={onCreate} className="btn btn-primary">
+              Create Video
+            </button>
           </div>
         </div>
         <div className="text-neutral-content/60">

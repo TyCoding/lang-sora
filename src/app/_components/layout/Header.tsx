@@ -1,8 +1,4 @@
-import {
-  MdiGithub,
-  RiProductHuntFill,
-  SimpleIconsBuymeacoffee,
-} from "@/app/_components/common/Icon";
+import { MdiGithub } from "@/app/_components/common/Icon";
 import { AppSetting } from "@/const/setting";
 
 export function Header() {
@@ -15,13 +11,20 @@ export function Header() {
               {AppSetting.title}
             </a>
           </div>
-
+          <div className="flex-none">
+            <ul className="menu menu-horizontal px-1">
+              <li>
+                <a href="/dashboard">Dashboard</a>
+              </li>
+              <li>
+                <a>Login</a>
+              </li>
+            </ul>
+          </div>
           <div className="flex gap-4 text-white">
             <a href={AppSetting.github} target="_blank">
               <MdiGithub className="cursor-pointer text-2xl" />
             </a>
-            <RiProductHuntFill className="cursor-pointer text-2xl" />
-            <SimpleIconsBuymeacoffee className="cursor-pointer text-xl" />
           </div>
         </div>
       </div>

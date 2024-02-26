@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { toast, Toaster } from "@/app/_components/common/alert";
+import { toast } from "@/app/_components/common/alert";
 
 export const Copy = ({ text }: { text: string }) => {
   function onCopy() {
@@ -19,9 +19,6 @@ export const Copy = ({ text }: { text: string }) => {
       <button onClick={onCopy} className="btn btn-neutral btn-sm">
         Copy
       </button>
-      <div className="center-toaster">
-        <Toaster />
-      </div>
     </div>
   );
 };

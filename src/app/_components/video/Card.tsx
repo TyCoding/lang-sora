@@ -16,8 +16,8 @@ export const Card: React.FC<Video> = ({
       <a href={`/video/${id}`} target="_self">
         <video
           className="video w-full cursor-pointer rounded-md"
-          {...(src && { src: src })}
-          {...(poster && { poster: poster })}
+          {...(src != null && { src: src })}
+          {...(poster != null && { poster: poster })}
           preload="auto"
           muted
           loop

@@ -14,6 +14,15 @@ export const videoRouter = createTRPCRouter({
   getVideoList: publicProcedure.query(({ ctx, input }) => {
     return ctx.db.video.findMany({
       where: { src: input },
+      orderBy: {
+        createdAt: "desc",
+      },
+    });
+  }),
+
+  getVideoIdList: publicProcedure.query(({ ctx }) => {
+    return ctx.db.video.findMany({
+      select: { id: true },
     });
   }),
 

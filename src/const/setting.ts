@@ -2,7 +2,7 @@ export const AppSetting = {
   title: "Lang Sora",
   description: "Quick Get Sora AI Video",
   author: "TyCoding",
-  github: "https://github.com/tycoding",
+  github: "https://github.com/tycoding/lang-sora",
 };
 
 export const FooterSetting = [
@@ -44,7 +44,7 @@ export const FooterSetting = [
       },
       {
         label: "LangSora",
-        url: "https://github.com/tycoding/langsora",
+        url: "https://github.com/tycoding/lang-sora",
       },
     ],
   },

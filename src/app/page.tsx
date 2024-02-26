@@ -1,10 +1,9 @@
-import { unstable_noStore as noStore } from "next/cache";
 import { Hero } from "@/app/_components/hero";
 import { Video } from "@/app/_components/video";
+import { Toaster } from "@/app/_components/common/alert";
+import React from "react";
 
 export default async function Home() {
-  noStore();
-
   return (
     <div className="relative">
       <div className="mx-auto">
@@ -15,6 +14,8 @@ export default async function Home() {
             <Video />
           </div>
         </div>
+
+        <Toaster />
       </div>
     </div>
   );
