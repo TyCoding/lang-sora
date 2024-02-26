@@ -1,16 +1,16 @@
-import React from 'react';
+import type React from "react";
 
-export type ToastType = 'default' | 'success' | 'error' | 'loading';
+export type ToastType = "default" | "success" | "error" | "loading";
 
 export type ToasterPosition =
-  | 'top-left'
-  | 'top-center'
-  | 'top-right'
-  | 'bottom-left'
-  | 'bottom-center'
-  | 'bottom-right';
+  | "top-left"
+  | "top-center"
+  | "top-right"
+  | "bottom-left"
+  | "bottom-center"
+  | "bottom-right";
 
-export type ToastState = 'enter' | 'idle' | 'leave';
+export type ToastState = "enter" | "idle" | "leave";
 
 export interface ToasterProps {
   position?: ToasterPosition;
@@ -18,7 +18,7 @@ export interface ToasterProps {
   reverse?: boolean;
   style?: React.CSSProperties;
   className?: string;
-  theme?: 'light' | 'dark';
+  theme?: "light" | "dark";
 }
 
 export interface ToastProps {
@@ -31,5 +31,5 @@ export interface IToast {
   type: ToastType;
   zIndex: number;
   title?: string;
-  theme?: 'light' | 'dark';
+  theme?: "light" | "dark";
 }

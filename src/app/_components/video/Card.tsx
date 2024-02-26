@@ -29,6 +29,7 @@ export const Card: React.FC<Video> = ({
         <div className="flex w-full items-center justify-start gap-2 p-2 pl-1 pt-4">
           <div className="avatar">
             <div className="w-8 rounded-full">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 {...(avatar && { src: avatar })}
                 alt="Tailwind-CSS-Avatar-component"

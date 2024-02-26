@@ -1,4 +1,4 @@
-import { IToast, ToastType } from './types';
+import { type IToast, type ToastType } from "./types";
 
 class Reducer {
   toasts: Array<IToast>;
@@ -38,7 +38,7 @@ class Reducer {
   add(message: string, type: ToastType): IToast {
     const toast = {
       id: this.toasts.length,
-      state: 'enter',
+      state: "enter",
       type: type,
       title: message,
     } as IToast;

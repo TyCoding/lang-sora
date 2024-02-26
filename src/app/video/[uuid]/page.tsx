@@ -45,6 +45,7 @@ export default async function ({ params }: { params: { uuid: string } }) {
                   <div className="flex items-center justify-center gap-2 ">
                     <div className="avatar">
                       <div className="w-8 rounded-full">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           {...(data.avatar != null && { src: data.avatar })}
                           alt="Tailwind-CSS-Avatar-component"

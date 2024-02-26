@@ -13,8 +13,6 @@ const Toaster = ({
   duration = 3000,
   reverse = false,
   theme = "light",
-  style,
-  className,
 }: ToasterProps) => {
   const [toasts, setToasts] = useState<IToast[]>([]);
   const [positionState, setPositionState] = useState<React.CSSProperties>({});
