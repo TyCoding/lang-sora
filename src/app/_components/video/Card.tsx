@@ -18,11 +18,8 @@ export const Card: React.FC<Video> = ({
           className="video w-full cursor-pointer rounded-md"
           {...(src != null && { src: src })}
           {...(poster != null && { poster: poster })}
-          preload="auto"
           muted
-          loop
           controls
-          autoPlay
         >
           Your browser does not support the video tag.
         </video>

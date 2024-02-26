@@ -28,11 +28,8 @@ export default async function ({ params }: { params: { uuid: string } }) {
                   className="video h-full w-full cursor-pointer rounded-md"
                   {...(data.src != null && { src: data.src })}
                   {...(data.poster != null && { poster: data.poster })}
-                  preload="auto"
                   muted
-                  loop
                   controls
-                  autoPlay
                 >
                   Your browser does not support the video tag.
                 </video>
