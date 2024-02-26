@@ -8,7 +8,9 @@
 
 ## 预览
 
-![](imgs/MIK-BRECdI.png)
+[https://sora.langchat.cn](https://sora.langchat.cn)
+
+![](imgs/MIK-viN5a0.png)
 
 ## 文档
 

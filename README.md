@@ -8,7 +8,12 @@ This is the case site for Sora AI videos. Use this template to help you quickly 
 
 ## Preview
 
-![](imgs/MIK-BRECdI.png)
+[https://sora.langchat.cn](https://sora.langchat.cn)
+
+![](imgs/MIK-viN5a0.png)
+
+## Deploy with Vercel
+
 
 ## Document
 
