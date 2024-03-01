@@ -6,6 +6,8 @@ This is the case site for Sora AI videos. Use this template to help you quickly 
 
 [中文文档](./README_ZH.md)
 
+The video data in the website comes from twitter, if you need to see the [lang-sora.sql](./lang-sora.sql) file
+
 ## Preview
 
 [https://sora.langchat.cn](https://sora.langchat.cn)

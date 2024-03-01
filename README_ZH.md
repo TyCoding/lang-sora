@@ -6,6 +6,8 @@
 
 [English](./README.md)
 
+网站中的视频数据来自Twitter，如果你需要请查看 [lang-sora.sql](./lang-sora.sql) 文件
+
 ## 预览
 
 [https://sora.langchat.cn](https://sora.langchat.cn)
